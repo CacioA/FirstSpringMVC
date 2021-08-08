@@ -5,7 +5,7 @@
 <br></br>
 <hr>
 Click <a href="showForm" >here </a>to open the user form
-</hr>
+<hr>
 <br></br>
 Click <a href="car/showForm" >here </a>to open the car form
 </body>

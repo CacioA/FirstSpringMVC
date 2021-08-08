@@ -5,19 +5,23 @@
 <html>
 
 <head>
-	<title>Student Registration Form</title>
+	<title>Car Registration Form</title>
+	<style>
+		.error{color=red}
+	</style>
 </head>
 
 <body>
 
 	<form:form action="processForm" modelAttribute="car">
 	
-		Car brand: <form:input path="carBrand" />
-			<form:errors path="carBrand" cssClass="error"/>
-		<br><br>
-	
-		Car model: <form:input path="carModel" />
 		
+		Car model (*): <form:input path="carModel" />
+			<form:errors path="carModel" cssClass="error"/>
+		<br><br>
+		
+		Car Year (*): <form:input path="carYear" />
+			<form:errors path="carYear" cssClass="error"/>
 		<br><br>
 		
 		Country: 
@@ -25,16 +29,18 @@
 		<form:select path="country">
 			
 			<form:options items="${car.countryOptions}"/>				
-		
+			<form:errors path="country" cssClass="error"/>
 		</form:select>
 	
 		<br></br>
 		
-		Gearbox:
+		Gearbox (*):
 		<br></br>
 		Manual <form:radiobutton path="gearbox" value="Manual"/>
+		<br></br>
 		Automatic <form:radiobutton path="gearbox" value="Automatic"/>
-		Sequential <form:radiobutton path="gearbox" value="Sequential"/>	
+		<br></br>
+		<form:errors path="gearbox" cssClass="error"/>
 		<br></br>
 			
 		<input type="submit" value="Submit" />

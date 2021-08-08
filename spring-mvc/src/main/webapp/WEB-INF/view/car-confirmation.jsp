@@ -6,10 +6,10 @@
 <title>Car verification process</title>
 </head>
 <body>
-The car is confirmed: ${car.carBrand} ${car.carModel}
+The car is confirmed: ${car.carYear} ${car.carModel}
 <br></br>
 Country: ${car.country}
 <br></br>
-Favourite gearbox: ${car.gearbox}
+Gearbox: ${car.gearbox}
 </body>
 </html>

@@ -2,16 +2,29 @@ package com.cacioa.spring;
 
 import java.util.LinkedHashMap;
 
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import javax.validation.Valid;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+import org.springframework.beans.factory.annotation.Value;
+
 
 public class Car {
 
-	private String carBrand;
+	
+	@NotNull(message="can't be empty")
+	@Min(value=1900,message="Car can't be older than 1900")
+	@Max(value=2021,message="Car can't be newer than 2021")
+	private Integer carYear; // use Integer to trim white spaces
+	@Valid
 	@NotNull(message="is required")
 	@Size(min=3,message="is required")
 	private String carModel;
 	private String country;
+	@NotNull(message="is required")
 	private String gearbox;
 	
 	private LinkedHashMap<String,String> countryOptions;
@@ -27,12 +40,12 @@ public class Car {
 		countryOptions.put("BEL","Belgium");
 	}
 	
-	public String getCarBrand() {
-		return carBrand;
+	public Integer getCarYear() {
+		return carYear;
 	}
 
-	public void setCarBrand(String carBrand) {
-		this.carBrand = carBrand;
+	public void setCarYear(Integer carYear) {
+		this.carYear = carYear;
 	}
 
 	public String getCarModel() {

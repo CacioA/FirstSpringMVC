@@ -80,11 +80,11 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-websocket-5.3.8-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/view"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/classmate-1.5.1.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-validator-7.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-validator-annotation-processor-7.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-validator-cdi-7.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jakarta.el-4.0.0.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jakarta.validation-api-3.0.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jboss-logging-3.4.1.Final.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-validator-6.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-validator-annotation-processor-6.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-validator-cdi-6.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jakarta.el-3.0.3.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jakarta.validation-api-2.0.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
